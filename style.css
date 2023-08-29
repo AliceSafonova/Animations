@@ -1,0 +1,123 @@
+*{ 
+  margin: 0; 
+  padding: 0; 
+  border: 0; 
+  outline: 0; 
+  list-style: none; 
+  box-sizing: border-box; 
+  text-decoration: none;  
+  scroll-behavior: smooth; 
+}
+.box {
+  width: 500px;
+  height: 500px;
+  border: 1px solid #000;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: wrap;
+ margin: 0 auto;
+}
+.box__1 {
+  width: 30px;
+  height: 30px;
+  background-color: darkred;
+  animation: box__1 5s linear infinite forwards;
+
+}
+@keyframes box__1{
+  0%{
+    transform: translateX(0px);
+  }
+  25%{
+    transform: translateX(470px);
+  }
+  50%{
+    transform: translateY(470px) translateX(470px) ;
+  }
+  75%{
+    transform: translateX(0px) translateY(470px);
+  }
+  100%{
+    transform: translateX(0px) ;
+  }
+}
+.box__2 {
+  width: 30px;
+  height: 30px;
+  background-color: darkgreen;
+  animation: box__2 5s linear infinite forwards;
+}
+@keyframes box__2 {
+  0%{
+    transform: translateX(0px);
+  }
+  25%{
+    transform: translateY(470px);
+  }
+  50%{
+    transform: translateY(470px) translateX(-470px) ;
+  }
+  75%{
+    transform: translateX(-470px) translateY(0px);
+  }
+  100%{
+    transform: translateX(0px) ;
+  }
+}
+.box__3 {
+  width: 30px;
+  height: 30px;
+  background-color: darkgoldenrod;
+  animation: box__3 5s linear infinite forwards;
+}
+@keyframes box__3 {
+  0%{
+    transform: translateX(0px);
+  }
+  25%{
+    transform: translateY(-470px);
+  }
+  50%{
+    transform: translateY(-470px) translateX(470px) ;
+  }
+  75%{
+    transform: translateX(470px) translateY(0px);
+  }
+  100%{
+    transform: translateX(0px) ;
+  }
+}
+.box__4 {
+  width: 30px;
+  height: 30px;
+  background-color: cornflowerblue;
+  animation: box__4 5s linear infinite forwards; 
+}
+@keyframes box__4 {
+  0%{
+    transform: translateX(0px);
+  }
+  25%{
+    transform: translateX(-470px);
+  }
+  50%{
+    transform: translateY(-470px) translateX(-470px) ;
+  }
+  75%{
+    transform: translateX(0px) translateY(-470px);
+  }
+  100%{
+    transform: translateX(0px) ;
+  }
+}
+.boxTop{
+  display: flex;
+  justify-content: space-between;
+
+}
+.boxBottom{
+  display: flex;
+  justify-content: space-between;
+
+}
